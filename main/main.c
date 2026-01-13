@@ -1,3 +1,7 @@
+/* Nada Aloussi*/
+/* 13/1/26*/
+/* Turning LED every other time when the button is pressed */
+
 #include "freertos/FreeRTOS.h"
 #include "driver/gpio.h"
 //#include "freetos/task.h"
@@ -9,8 +13,7 @@ void app_main(void) {
     // TO-DO: Configure LED output
     gpio_reset_pin(LED_PIN);
     gpio_set_direction(LED_PIN, GPIO_MODE_OUTPUT);
-    gpio_set_level(LED_PIN, 0); 
-    
+    gpio_set_level(LED_PIN, 0);
 
     // TO-DO: Configure Button input
     gpio_reset_pin(BUTTON_PIN);
